@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto',sans-serif;
+}
+
+.heading {
+  text-align: center;
+  margin: 1rem;
+  padding: 0.4rem;
+  color: white;
+  background-color: rgb(4, 87, 87);
+  border-radius: 12px;
+}
+
+table {
+  margin: auto;
+  width: calc(100% - 2rem);
+  border-spacing: 0px;
+}
+
+tr.table-head {
+  margin: auto;
+  padding: 0.4rem;
+  border-collapse: collapse;
+  background-color: rgb(186, 255, 117);
+  border-radius: 12px;
+}
+tr {
+  text-align: center;
+  padding: 0.4rem;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+th {
+  padding: 0.2rem;
+}
+td {
+  color: black;
+  padding: 0.2rem;
+}
+
+select {
+  margin: 4px;
+  margin-left: 8px;
+  height: 20px;
+  width: 64px;
+  border: none;
+  box-shadow: 1px 1px 2px 2px #dbdbdb;
+  border-radius: 4px;
+}
+select:focus-visible {
+  outline: none;
+}
+
+.pageNumbers {
+  margin:1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pageNumbers li {
+  list-style: none;
+  text-align: center;
+  height: 30px;
+  width: 30px;
+  margin:4px;
+  padding: 6px ;
+  background-color: rgb(226, 223, 223);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.pageNumbers li:hover {
+  background-color:rgb(177, 173, 173) ;
+}
+.pageNumbers li.active {
+  background-color: rgb(177, 173, 173);
+}
