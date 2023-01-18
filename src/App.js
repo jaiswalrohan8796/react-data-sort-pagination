@@ -115,7 +115,7 @@ class App extends Component {
         //mapping into JSX
         data = currentPageData.map((item) => {
         return (
-          <tr>
+          <tr key={item.id}>
             <td>{item.id}</td>
             <td>{item.name}</td>
             <td>{item.upvotes}</td>
